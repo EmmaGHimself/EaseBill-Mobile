@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bt_close"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:enabled="false"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            app:srcCompat="@drawable/ic_back_arrow"
+            app:tint="#005B82" />
+
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:progress="60"
+            android:textColor="#005B82" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/signUpOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spacing_mlarge"
+        android:paddingTop="@dimen/spacing_medium"
+        android:paddingRight="@dimen/spacing_mlarge">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="OTP Verification"
+            android:textColor="#021038"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="We sent an OTP code to your email address and phone number"
+            android:textAlignment="center"
+            android:textColor="#021038"
+            android:textSize="14sp" />
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/otp_pin"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/gilroy_semi_bold"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:itemBackground="@drawable/edit_text_outline"
+            android:textColor="@color/brand_black"
+            android:textSize="13sp"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="false"
+            app:itemCount="4"
+            app:itemHeight="55dp"
+            app:itemRadius="3dp"
+            app:itemSpacing="15dp"
+            app:itemWidth="55dp"
+            app:lineColor="@color/brand_grey"
+            app:lineWidth="1dp"
+            app:viewType="rectangle" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="Didn\'t get OTP? Resend OTP"
+            android:textColor="#475569"
+            android:textSize="14sp" />
+
+
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/continueBT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:alpha="0.5"
+            android:background="@drawable/primary_btn"
+            android:fontFamily="@font/gilroy_bold"
+            android:gravity="center"
+            android:text="Verify"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_white"
+            android:textSize="14sp"
+            app:spinning_bar_color="@color/brand_white"
+            app:spinning_bar_padding="15dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

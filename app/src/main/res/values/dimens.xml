@@ -1,0 +1,88 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_horizontal_padding">10dp</dimen>
+    
+    <dimen name="recycler_padding">3dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_top">0dp</dimen>
+    <dimen name="card_bottom">8dp</dimen>
+    <dimen name="card_start">0dp</dimen>
+    <dimen name="card_end">0dp</dimen>
+
+    <dimen name="crypto_item_size">32dp</dimen>
+    <dimen name="crypto_item_margin">8dp</dimen>
+
+    <dimen name="app_bar_height">180dp</dimen>
+
+    <dimen name="input_field">55dp</dimen>
+
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="contentTextSize">16dp</dimen>
+
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="calendar_layout_width">50dp</dimen>
+    <dimen name="calendar_layout_height">61dp</dimen>
+    <dimen name="single_calendar_margin">10dp</dimen>
+
+    <!-- OnBoard. -->
+
+    <dimen name="pager_dot_size">8dp</dimen>
+    <dimen name="pager_height">18dp</dimen>
+    <dimen name="ob_header_top_margin">50dp</dimen>
+
+    <dimen name="ob_desc_padding">30dp</dimen>
+    <dimen name="ob_banner_height">300dp</dimen>
+    <dimen name="items_inbetween">8dp</dimen>
+
+    <dimen name="button_text">18sp</dimen>
+    <dimen name="ob_header_text_size">22sp</dimen>
+    <dimen name="ob_desc_text_size">18sp</dimen>
+
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_xmedium">7dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_smlarge">18dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+    <dimen name="spacing_mxlarge">25dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="spacing_xmlarge">40dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+    <dimen name="spacing_xxxlarge">55dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="spacing">8dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="headerTextSize">18sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+
+    <dimen name="roboto_calendar_padding">8dp</dimen>
+    <dimen name="roboto_calendar_month_margin_bottom">8dp</dimen>
+    <dimen name="roboto_calendar_week_margin_bottom">5dp</dimen>
+    <dimen name="roboto_calendar_day_of_the_month_background_size">40dp</dimen>
+    <dimen name="roboto_calendar_circle_size">8dp</dimen>
+    <dimen name="roboto_calendar_ring_size">18dp</dimen>
+    <dimen name="roboto_calendar_day_of_week_font">16sp</dimen>
+    <dimen name="roboto_calendar_day_of_the_month_font">16sp</dimen>
+
+    <dimen name="activityPadding">16dp</dimen>
+    <dimen name="placeholderImage">60dp</dimen>
+    <dimen name="placeholderTextHeight">12dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+
+    <dimen name="learning_button_card_width">63dp</dimen>
+    <dimen name="learning_button_card_height">63dp</dimen>
+
+</resources>

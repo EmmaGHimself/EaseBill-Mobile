@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bt_close"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:enabled="false"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            app:srcCompat="@drawable/ic_back_arrow"
+            app:tint="#005B82" />
+
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:progress="60"
+            android:textColor="#005B82" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:id="@+id/signUpOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_mlarge"
+            android:paddingTop="@dimen/spacing_medium"
+            android:paddingRight="@dimen/spacing_mlarge">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Personal Information"
+                android:textColor="#021038"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="We value your privacy and are committed to
+keeping your personal information secure."
+                android:textAlignment="center"
+                android:textColor="#021038"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="First Name"
+                android:textColor="#373334"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/firstName_ET"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_text_outline"
+                android:fontFamily="@font/gilroy_regular"
+                android:gravity="start|center"
+                android:hint="Enter first name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColor="@color/brand_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Last Name"
+                android:textColor="#373334"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/lastName_ET"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_text_outline"
+                android:fontFamily="@font/gilroy_regular"
+                android:gravity="start|center"
+                android:hint="Enter last name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColor="@color/brand_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Username"
+                android:textColor="#373334"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/userName_ET"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_text_outline"
+                android:fontFamily="@font/gilroy_regular"
+                android:gravity="start|center"
+                android:hint="Enter username"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColor="@color/brand_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Phone Number"
+                android:textColor="#373334"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_text_outline"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/country_flag"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/ic_nigeria" />
+
+                    <TextView
+                        android:id="@+id/country_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/gilroy_regular"
+                        android:gravity="center"
+                        android:letterSpacing="0.04"
+                        android:text="+234"
+                        android:textColor="@color/brand_black"
+                        android:textSize="13sp"
+                        app:drawableTint="@color/brand_black" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:background="@color/brand_grey" />
+
+                <EditText
+                    android:id="@+id/phone_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:autofillHints="6dp"
+                    android:background="@null"
+                    android:fontFamily="@font/gilroy_regular"
+                    android:hint="Enter phone number"
+                    android:inputType="phone"
+                    android:textColor="@color/brand_black"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Email Address"
+                android:textColor="#373334"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/email_ET"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_text_outline"
+                android:fontFamily="@font/gilroy_regular"
+                android:gravity="start|center"
+                android:hint="Enter email address"
+                android:importantForAutofill="no"
+                android:inputType="textWebEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/brand_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Password"
+                android:textColor="#373334"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pin_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/edit_text_outline"
+                    android:fontFamily="@font/gilroy_regular"
+                    android:gravity="start|center"
+                    android:hint="Enter password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/brand_black"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/togglePassword"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/pin_ET"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/gilroy_regular"
+                    android:textOff="Hide"
+                    android:textOn="Show"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/continueBT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:alpha="0.5"
+                android:background="@drawable/primary_btn"
+                android:fontFamily="@font/gilroy_bold"
+                android:gravity="center"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/brand_white"
+                android:textSize="14sp"
+                app:spinning_bar_color="@color/brand_white"
+                app:spinning_bar_padding="15dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

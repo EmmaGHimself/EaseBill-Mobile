@@ -1,0 +1,16 @@
+package com.easebill.app.util
+
+/**
+ * @Author GBAYESOLA EMMANUEL
+ * @Project EASEBILL APP
+ * @Date 01/07/2024
+ * @Email EGBYAESOLA@GMAIL.COM
+ */
+sealed class Resource<T>(
+    val data: T? = null,
+    val message: String? = null
+) {
+    class Success<T>(data: T) : Resource<T>(data)
+    class Error<T>(message: String, data: T? = null) : Resource<T>(data, message)
+    class Loading<T> : Resource<T>()
+}

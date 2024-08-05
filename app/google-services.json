@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "741627149416",
+    "project_id": "easebill-app",
+    "storage_bucket": "easebill-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741627149416:android:1a442986ef7bfa42d58fdd",
+        "android_client_info": {
+          "package_name": "com.easebill.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl9jNv1e4xp_-gBZLJdb0DxEXfkXWBmZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

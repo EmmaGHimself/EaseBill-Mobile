@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000">
+
+    <LinearLayout
+        android:id="@+id/signUpOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spacing_mlarge"
+        android:paddingTop="@dimen/spacing_medium"
+        android:paddingRight="@dimen/spacing_mlarge">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="Welcome Back!"
+            android:textColor="#021038"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="Please sign in to access your account."
+            android:textColor="#021038"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="Email Address"
+            android:textColor="#373334"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/email_ET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/edit_text_outline"
+            android:fontFamily="@font/gilroy_regular"
+            android:gravity="start|center"
+            android:hint="Enter email address"
+            android:importantForAutofill="no"
+            android:inputType="textWebEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/brand_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="Password"
+            android:textColor="#373334"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/pin_ET"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_text_outline"
+                android:fontFamily="@font/gilroy_regular"
+                android:gravity="start|center"
+                android:hint="Enter password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/brand_black"
+                android:textSize="14sp" />
+
+            <ToggleButton
+                android:id="@+id/togglePassword"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/pin_ET"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/gilroy_regular"
+                android:textOff="Hide"
+                android:textOn="Show"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="Forgot Password?"
+            android:textColor="#102572"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/continueBT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:alpha="0.5"
+                android:background="@drawable/primary_btn"
+                android:fontFamily="@font/gilroy_bold"
+                android:gravity="center"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="@color/brand_white"
+                android:textSize="14sp"
+                app:spinning_bar_color="@color/brand_white"
+                app:spinning_bar_padding="15dp" />
+
+            <TextView
+                android:id="@+id/signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Don’t have an account? Sign up"
+                android:textColor="#475569"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/brand_blue</color>
+    <color name="colorPrimaryDark">@color/brand_cyan</color>
+    <color name="colorAccent">@color/brand_blue</color>
+
+    <color name="rateColor">#2D102572</color>
+
+    <color name="white">@color/md_white_1000</color>
+    <color name="unselect_chip_stroke">#E1D7E9</color>
+
+    <color name="unselect_chip_text">#9A79B6</color>
+
+    <color name="divider">#EDE7F2</color>
+    <color name="background">#E5E5E5</color>
+
+    <color name="background_shimmer">#dddddd</color>
+
+    <color name="outline_color">#DBDBDB</color>
+    <color name="tab_background_color">@color/brand_blue</color>
+    <color name="tab_text_selected_color">#FFFFFF</color>
+    <color name="tab_text_unselected_color">#7A7978</color>
+
+</resources>

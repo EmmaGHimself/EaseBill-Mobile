@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EaseBill</string>
+
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="network_failure">Error processing request, Contact customer support for fix issue</string>
+    <string name="conversion_error">Conversion Error</string>
+</resources>
